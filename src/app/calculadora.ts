@@ -1,4 +1,4 @@
-function operar(operacion: string, a: number, b: number) {
+function operar(operacion: string = "", a: number, b: number) {
     if (operacion === 'suma') {
         return suma(a, b);
     } else if (operacion === 'resta') {
@@ -9,7 +9,7 @@ function operar(operacion: string, a: number, b: number) {
 function suma(a: number, b: number) {
 
     if (a === undefined || b === undefined) {
-       
+
         throw new Error("No se puede sumar indefinidos");
     }
 
