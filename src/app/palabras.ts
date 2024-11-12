@@ -1,7 +1,8 @@
 export const esPalindromo = (frase: string) => {
+    if (!frase) {
+        return false;
+    }
     const fraseSinEspacios = frase.replace(/\s/g, "").toLowerCase();
     const fraseInvertida = fraseSinEspacios.split("").reverse().join("");
-    console.log(fraseSinEspacios);
-    console.log(fraseInvertida);
     return fraseSinEspacios === fraseInvertida;
 }
