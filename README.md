@@ -2,6 +2,17 @@
 
 Este proyecto cuenta con los siguientes endpoints por defecto :
 
+## Ejecucion del proyecto
+
+Para poner el marcha el proyecto, lo puedes hacer con:
+
+    npm run dev
+
+Para construir el proyecto y dejar los ficheros finales en la carpeta __/dist__
+
+    npm run build
+
+    
 ## Lista de endpoints
 
 * http://localhost:3000/
