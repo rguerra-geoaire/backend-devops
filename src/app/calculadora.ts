@@ -30,4 +30,47 @@ function restar(a: number, b: number) {
     return a - b;
 }
 
+function multiplicar(a: number, b: number) { //a = 1 , b=2
+
+    if (a === undefined || b === undefined) {
+        throw new Error("No se puede sumar indefinidos");
+    }
+
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return NaN;
+    }
+
+    return a * b;
+}
+
+function dividir(a: number, b: number) { //a = 1 , b=2
+
+    if (a === undefined || b === undefined) {
+        throw new Error("No se puede sumar indefinidos");
+    }
+
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return NaN;
+    }
+
+    if (b == 0){
+        throw new Error("No se puede dividir por 0");
+    } 
+
+    return a / b;
+}
+
+function potencia(a: number, b: number) { //a = 1 , b=2
+
+    if (a === undefined || b === undefined) {
+        throw new Error("No se puede sumar indefinidos");
+    }
+
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return NaN;
+    }
+
+    return Math.pow( a , b );
+}
+
 export { suma, operar, restar };
