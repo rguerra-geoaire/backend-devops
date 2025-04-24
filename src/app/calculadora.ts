@@ -42,7 +42,7 @@ function restar(a: number, b: number) {
 function multiplicar(a: number, b: number) { //a = 1 , b=2
 
     if (a === undefined || b === undefined) {
-        throw new Error("No se puede sumar indefinidos");
+        throw new Error("No se puede multiplicar indefinidos");
     }
 
     if (typeof a !== 'number' || typeof b !== 'number') {
@@ -55,7 +55,7 @@ function multiplicar(a: number, b: number) { //a = 1 , b=2
 function dividir(a: number, b: number) { //a = 1 , b=2
 
     if (a === undefined || b === undefined) {
-        throw new Error("No se puede sumar indefinidos");
+        throw new Error("No se puede dividir indefinidos");
     }
 
     if (typeof a !== 'number' || typeof b !== 'number') {
@@ -72,7 +72,7 @@ function dividir(a: number, b: number) { //a = 1 , b=2
 function potencia(a: number, b: number) { //a = 1 , b=2
 
     if (a === undefined || b === undefined) {
-        throw new Error("No se puede sumar indefinidos");
+        throw new Error("No se puede hacer potencia con indefinidos");
     }
 
     if (typeof a !== 'number' || typeof b !== 'number') {
