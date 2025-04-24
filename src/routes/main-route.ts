@@ -11,7 +11,7 @@ mainRouter.get("/", (_req, res) => {
 });
 
 mainRouter.get("/api-key", (_req, res) => {
-    return res.send(`la apikey de mi aplicacion es: ${configuration.apikey}`);
+    return res.send({ data: `la apikey de mi aplicacion es: ${configuration.apikey}` });
 });
 
 mainRouter.get("/operar", (req, res) => {
