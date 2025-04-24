@@ -3,7 +3,16 @@ function operar(operacion: string = "", a: number, b: number) {
         return suma(a, b);
     } else if (operacion === 'resta') {
         return restar(a, b);
+    } else if (operacion === 'multiplicar') {
+        return multiplicar(a, b);
+    } else if (operacion === 'dividir') {
+        return dividir(a, b);
+    } else if (operacion === 'potencia') {
+        return potencia(a, b);
+    } else if (operacion === 'factorial') {
+        return factorial(a);
     }
+    
 }
 
 function suma(a: number, b: number) { //a = 1 , b=2
@@ -73,4 +82,24 @@ function potencia(a: number, b: number) { //a = 1 , b=2
     return Math.pow( a , b );
 }
 
-export { suma, operar, restar };
+function factorial(a: number) {
+    if (a === undefined) {
+
+        throw new Error("No se puede hacer factoriales con indefinidos");
+    }
+    if (typeof a !== 'number') {
+        return NaN;
+    }
+    var num = 1;
+    for (var i = 1; i<=a  ; i++) {
+         
+        num = num * i; 
+        
+       
+      }
+
+    return num;
+}
+
+
+export { suma, operar, restar, multiplicar, dividir, potencia, factorial };
